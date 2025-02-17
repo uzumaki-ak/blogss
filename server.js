@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import path from "path";
-import connectDB from "./config/db";
+// import connectDB from "./config/db";
 import cors from "cors";
 import {
   errorResponserHandler,
@@ -13,6 +13,7 @@ import userRoutes from "./routes/userRoutes";
 import postRoutes from "./routes/postRoutes";
 import commentRoutes from "./routes/commentRoutes";
 import postCategoriesRoutes from "./routes/postCategoriesRoutes";
+import connectDB from "./config/db.js";
 
 dotenv.config();
 connectDB();
