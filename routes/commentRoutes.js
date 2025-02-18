@@ -6,7 +6,7 @@ import {
   getAllComments,
   updateComment,
 } from "../controllers/commentControllers.js";
-import { adminGuard, authGuard } from "../middleware/authMiddleware";
+import { adminGuard, authGuard } from "../middleware/authMiddleware.js";
 
 router
   .route("/")

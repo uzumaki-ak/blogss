@@ -7,7 +7,7 @@ import {
   getPost,
   updatePost,
 } from "../controllers/postControllers.js";
-import { authGuard, adminGuard } from "../middleware/authMiddleware";
+import { authGuard, adminGuard } from "../middleware/authMiddleware.js";
 
 router.route("/").post(authGuard, adminGuard, createPost).get(getAllPosts);
 router
