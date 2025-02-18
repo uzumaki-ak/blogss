@@ -6,7 +6,7 @@ import {
   getAllPostCategories,
   updatePostCategory,
   getSingleCategory,
-} from "../controllers/postCategoriesController";
+} from "../controllers/postCategoriesController.js";
 import { adminGuard, authGuard } from "../middleware/authMiddleware";
 
 router

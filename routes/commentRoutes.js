@@ -5,7 +5,7 @@ import {
   deleteComment,
   getAllComments,
   updateComment,
-} from "../controllers/commentControllers";
+} from "../controllers/commentControllers.js";
 import { adminGuard, authGuard } from "../middleware/authMiddleware";
 
 router
