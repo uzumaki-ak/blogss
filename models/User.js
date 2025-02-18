@@ -41,7 +41,8 @@ import { Schema, model } from "mongoose";
 import bcrypt from "bcryptjs";  // Import bcrypt as a default import
 const { hash, compare } = bcrypt;  // Destructure hash and compare
 
-import { sign } from "jsonwebtoken";
+import pkg from "jsonwebtoken";  // Default import for jsonwebtoken
+const { sign } = pkg;  // Destructure sign
 
 const UserSchema = new Schema(
   {
