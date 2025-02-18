@@ -1,3 +1,4 @@
+import { Code2Icon, QuoteIcon } from 'lucide-react';
 import { useCallback } from 'react'
 import {
   AiOutlineBold,
@@ -10,11 +11,11 @@ import {
   AiOutlineUndo,
   AiOutlineUnorderedList,
 } from "react-icons/ai";
-import { BiParagraph } from "react-icons/bi";
+import { BiCodeBlock, BiParagraph } from "react-icons/bi";
 import { FiCode } from "react-icons/fi";
 import { MdOutlineLayersClear } from "react-icons/md";
-import { PiCodeBlock, PiQuotes, PiImageSquareBold } from "react-icons/pi";
-import { TbSpacingVertical } from "react-icons/tb";
+// import { PiCodeBlock, PiQuotes, PiImageSquareBold } from "react-icons/pi";
+import { TbQuote, TbSpacingVertical } from "react-icons/tb";
 
 const MenuBar = ({ editor }) => {
   const addImage = useCallback(() => {
@@ -146,14 +147,14 @@ const MenuBar = ({ editor }) => {
         className={`editor-btn ${editor.isActive("codeBlock") && "active-editor-btn"
           }`}
       >
-        <PiCodeBlock />
+        <Code2Icon />
       </button>
       <button
         onClick={() => editor.chain().focus().toggleBlockquote().run()}
         className={`editor-btn ${editor.isActive("blockquote") && "active-editor-btn"
           }`}
       >
-        <PiQuotes />
+        <QuoteIcon />
       </button>
       <button
         onClick={() => editor.chain().focus().setHorizontalRule().run()}
