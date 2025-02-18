@@ -1,4 +1,4 @@
-import { Code2Icon, QuoteIcon } from 'lucide-react';
+import { Code2Icon, ImageIcon, QuoteIcon } from 'lucide-react';
 import { useCallback } from 'react'
 import {
   AiOutlineBold,
@@ -126,7 +126,7 @@ const MenuBar = ({ editor }) => {
         <BiParagraph />
       </button>
 
-      <button onClick={addImage} className='editor-btn'><PiImageSquareBold /></button>
+      <button onClick={addImage} className='editor-btn'><ImageIcon /></button>
 
       <button
         onClick={() => editor.chain().focus().toggleBulletList().run()}
